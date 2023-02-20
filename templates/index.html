@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Search</h1>
+    {% if response %}
+        <h1>Video count from channel</h1>
+        {% for res in response %}
+        <p>{{ res }}  <a href="{{ res }}"> &nbsp; {{ response[res] }}</a> </p>
+        {% endfor %}
+    {% endif %}
+    <div>
+        <p>**Please wait while loading</p>
+        <a href="/?find=video-count">Click Here To Count The Number Of Videos In (Krish Naik, iNeuron, 
+            College Wallah)</a>
+    </div>
+    <div class="form">
+        <h3>Enter a youtube video link and see the magic</h3>
+        <form action="/search" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</div>
+{% endblock %}

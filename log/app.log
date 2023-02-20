@@ -1,0 +1,8 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 107-835-215
+INFO:werkzeug:127.0.0.1 - - [20/Feb/2023 23:43:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Feb/2023 23:43:49] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Feb/2023 23:43:49] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Feb/2023 23:44:35] "POST /search HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Feb/2023 23:44:35] "[33mGET /style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Feb/2023 23:44:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
